@@ -18,7 +18,7 @@ export default function App() {
             const notesArray = snapshot.docs.map(doc => ({
                 ...doc.data(),
                 id: doc.id,
-            }))
+            })).sort((a, b) => b.updatedAt - a.updatedAt)
             setNotes(notesArray)
         })
         return unsubscribe

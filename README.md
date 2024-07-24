@@ -1,5 +1,5 @@
 # React Notes app
-## Concepts Used
+## Concepts Used while creating this project
 * useState
 * useEffect
 * Debouncing
